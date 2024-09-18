@@ -9,7 +9,7 @@ export async function GET(req) {
     const favoriteMovies = await prismadb.movie.findMany({
       where: {
         id: {
-          in: currentUser?.favoriteIds,
+          in: currentUser?.favoriteIds || [],
         },
       },
     });

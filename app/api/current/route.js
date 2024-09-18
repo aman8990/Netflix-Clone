@@ -1,4 +1,3 @@
-// app/api/current/route.js
 import { NextResponse } from 'next/server';
 import serverAuth from '@/app/_lib/serverAuth';
 
