@@ -26,7 +26,7 @@ function Page() {
         email,
         password,
 
-        callbackUrl: '/profiles',
+        callbackUrl: `${window.location.origin}/profiles`,
       });
     } catch (error) {
       console.log(error);
